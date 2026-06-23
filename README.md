@@ -4,7 +4,7 @@ A collection of applications and functions in prompt and AI engineering using Py
 
 Current project titled **"Core AI Pipeline Components"**
 
-This project implements local LLM inference, query-based information extraction, context compression, and response generation based on provided evidence using Ollama models. By separation the extraction and the response generation steps, we reduce the strain on the models, reduce hallucinations and improve the quality of the response.
+This project implements local large language model (LLM) inference, query-based information extraction, context compression, and response generation based on provided evidence using Ollama models. By separating the extraction and the response generation steps, hallucinations are reduced and the quality of the response is inscreased.
 
 **Project Workflow**
 
@@ -14,11 +14,11 @@ This project implements local LLM inference, query-based information extraction,
 * Pass the summaries to a second Ollama model (generator model)
 * Produce the required response
 
-The details of the project and its functions are provided in src. So far the following skills have been demonstrated in the script:
+The details of the project and its functions are provided in src. This project demonstrates the following capabilities:
 
 * Prompt engineering
 * Local AI deployment
-* Multi-modal orchestration
+* Multi-step LLM orchestration
 * Evidence-based AI systems
 
 Author
