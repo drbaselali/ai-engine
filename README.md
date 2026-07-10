@@ -29,7 +29,7 @@ The details of the project and its functions are provided in src. This project d
 * User prompt: Describe WWII
 * Sources:
   
- 1- https://www.wikiwand.com/en/World_War_II
+  1- https://www.wikiwand.com/en/World_War_II
 
  2- https://www.britannica.com/event/How-Did-World-War-II-Start
 
