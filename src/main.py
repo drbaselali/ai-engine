@@ -1,6 +1,9 @@
+#LLM Models
 EXTRACTION_MODEL = "qwen2.5:7b"
 GENERATOR_MODEL = "llama3.1:8b"
-
+VERIFIER_MODEL = "qwen2.5:7b"
+MODE_CLASSIFIER_MODEL = "gemma2:9b"
+ADVISOR_MODEL = "deepseek-r1:8b"
 
 #ollama model deployment, allows for parameters finetuning and setting standarad values
 #low temperatures make the models strict and less creative and vice versa
