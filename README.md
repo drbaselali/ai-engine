@@ -1,4 +1,4 @@
-# ai-engine
+# ai-verification-engine
 
 A collection of applications and functions in prompt and AI engineering using Python.
 
