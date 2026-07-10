@@ -135,7 +135,22 @@ The provided sources also highlight various aspects such as military operations,
 * Reducing LLM-model dependence where possible with statistical scoring or fixed text templates.
 * Experimenting with different prompts accross different fields of knowledge
 * Observe and document hallucination cases when detected
-  
+
+# References & Model Citations
+
+1. Qwen Team, Alibaba Group. (2024). Qwen2.5: A Powerful and Scalable Language Model Series. GitHub Repository. https://github.com
+[Utilized for EXTRACTION_MODEL and VERIFIER_MODEL]
+
+2. Dubey, A., Jauhri, A., Pandey, A., et al. (2024). The Llama 3 Herd of Models. arXiv preprint arXiv:2407.21783. https://doi.org
+[Utilized for GENERATOR_MODEL]
+
+3. Gemma Team, Google DeepMind. (2024). Gemma 2: Improving Open Language Models via Advanced Knowledge Distillation. arXiv preprint arXiv:2408.00118. https://doi.org
+[Utilized for MODE_CLASSIFIER_MODEL]
+
+4. DeepSeek-AI. (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. arXiv preprint arXiv:2501.12948. https://doi.org
+[Utilized for ADVISOR_MODEL]
+
+
 Author
 
 Dr. Basel Ali
