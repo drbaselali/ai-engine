@@ -60,7 +60,7 @@ The war had profound impacts on geopolitics and society, reshaping the world ord
 
 The provided sources also highlight various aspects such as military operations, political boundaries, strategic locations, and technological advancements through detailed maps and annotations in atlases dedicated to World War II. Documentaries and modern media continue to explore and document the events and legacy of this global conflict.""
 
-* Extracted atmoic claims: 
+* Extracted atomic claims: 
 1. World War II was a global conflict that lasted from 1939 to 1945
 2. The conflict began on September 1, 1939, when Germany invaded Poland
 3. Great Britain and France declared war two days after Germany's invasion of Poland
@@ -133,7 +133,7 @@ The provided sources also highlight various aspects such as military operations,
 
 # Further Steps
 * Reducing LLM-model dependence where possible with statistical scoring or fixed text templates.
-* Expermenting with different prompts accross different fields of knowledge
+* Experimenting with different prompts accross different fields of knowledge
 * Observe and document hallucination cases when detected
   
 Author
