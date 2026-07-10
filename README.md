@@ -100,32 +100,32 @@ The provided sources also highlight various aspects such as military operations,
 
 * Recommendations:
 
-- "The war resulted in an estimated 70 million fatalities."
+1- "The war resulted in an estimated 70 million fatalities."
 
 *Explanation:* This claim is highly debated among historians due to varying methodologies for estimating casualties. The number can vary significantly based on sources and the inclusion of different groups (e.g., civilians, military personnel).
 
 *Improvement Suggestion:* Provide a range or cite specific sources that support this estimate.
 
-- "World War II had profound impacts on geopolitics and society, reshaping the world order after its end."
+2- "World War II had profound impacts on geopolitics and society, reshaping the world order after its end."
 
 *Explanation:* While generally accurate, this statement is broad and lacks specificity. It does not detail how exactly the world order was reshaped, which could be elaborated upon for better clarity.
 
 *Improvement Suggestion:* Specify key geopolitical changes such as the formation of the United Nations, the division of Germany, or the rise of the Cold War between the USA and USSR.
 
-- "The immediate causes were rooted in the harsh terms of the Treaty of Versailles after World War I."
+3- "The immediate causes were rooted in the harsh terms of the Treaty of Versailles after World War I."
 
 *Explanation:* While the Treaty of Versailles did contribute to post-war resentment, it is an oversimplification to state that its harsh terms were the sole or primary cause. Other factors such as economic instability and political turmoil also played significant roles.
 
 *Improvement Suggestion:* Include additional context about other contributing factors like the Great Depression, which exacerbated existing tensions.
 
 
-- "Adolf Hitler and the Nazi Party rose to power due to resentment fostered by the Treaty of Versailles."
+4- "Adolf Hitler and the Nazi Party rose to power due to resentment fostered by the Treaty of Versailles."
 
 *Explanation:* Similar to the previous claim, this statement is an oversimplification. While the Treaty contributed to a climate of discontent, other factors such as economic conditions and political instability were also crucial in Hitler's rise.
 
 *Improvement Suggestion:* Provide more context on how various social, economic, and political factors combined to create an environment where the Nazi Party could gain power.
 
-- "The United States entered the war after the Pearl Harbor Attack."
+5- "The United States entered the war after the Pearl Harbor Attack."
 
 *Explanation:* While this is true, it might be more accurate to specify that the U.S. declared war on Japan following the attack and subsequently also declared war on Germany due to its involvement in Europe.
 
