@@ -31,17 +31,17 @@ The details of the project and its functions are provided in src. This project d
   
   1- https://www.wikiwand.com/en/World_War_II
 
- 2- https://www.britannica.com/event/How-Did-World-War-II-Start
+  2- https://www.britannica.com/event/How-Did-World-War-II-Start
 
- 3- https://commons.wikimedia.org/wiki/Atlas_of_World_War_II
+  3- https://commons.wikimedia.org/wiki/Atlas_of_World_War_II
 
- 4- https://timepath.org/world-war-ii
+  4- https://timepath.org/world-war-ii
 
- 5- https://www.imdb.com/title/tt40385200/
+  5- https://www.imdb.com/title/tt40385200/
 
- 6- https://www.cbsnews.com/tag/world-war-ii/
+  6- https://www.cbsnews.com/tag/world-war-ii/
 
- 7- https://www.politico.com/news/world-war-ii
+  7- https://www.politico.com/news/world-war-ii
 
 * Generated response using the extracted summaries from the sources:
   
