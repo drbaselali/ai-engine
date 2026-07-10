@@ -2,7 +2,7 @@
 
 A collection of applications and functions in prompt and AI engineering using Python.
 
-Current project titled **"Core AI Pipeline Components"**
+Current project titled **"AI Verification System"**
 
 This project implements local large language model (LLM) inference, query-based information extraction, context compression, and response generation based on provided evidence using raw LLM models via Ollama. Furthermore, after response generation, the pipeline continues by extracting claims and classifying them, which then allows the model to evaluate these claims and produce a recommendation summary.
 
