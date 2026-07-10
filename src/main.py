@@ -102,3 +102,90 @@ def generate_answer(final_prompt: str, model: str) -> str:
         max_tokens=3072,
         num_ctx=8192,  # 12288 might be better for larger sources and summaries
     )
+
+#claim extractor 
+def decompose_claims(answer: str) -> list[str]:
+    system_msg = (
+        "Extract atomic factual claims from the text.\n"
+        "An ATOMIC claim contains only ONE verifiable fact.\n"
+        "Ensure every claim includes the subject name (e.g., the artist or track name) so it can be verified independently.\n"
+        "Example:\n"
+        "Text: 'Radiohead is a band from Abingdon formed in 1985.'\n"
+        "Output: ['Radiohead is a band', 'Radiohead is from Abingdon', 'Radiohead was formed in 1985']\n\n"
+        "Strict Rule: Output ONLY a valid JSON array of strings. No thinking, no markdown tags."
+    )
+    raws = ollama_chat(
+        VERIFIER_MODEL,
+        system_msg,
+        answer,
+        temperature=0.0,
+        max_tokens=3072,
+        num_ctx=4096,
+        keep_alive="30m",
+    )
+    print("\n Claim Decomposition...", raws)
+    raws = re.sub(r"```json|```", "", raws).strip()
+
+    try:
+        claims = json.loads(raws)
+        if isinstance(claims, list):
+            return [c for c in claims if isinstance(c, str) and c.strip()]
+        return []
+    except Exception:
+        return []
+#classify claims
+def classify_knowledge_mode(claim: str) -> str:
+    system_msg = (
+        "Classify the following claim into EXACTLY one knowledge mode:\n"
+        "A = Axiomatic (accepted without proof within a formal system)\n"
+        "D = Derived (formal derivation from axioms or rules)\n"
+        "E = Descriptive (empirical, based on observation or measurement)\n"
+        "R = Reported (from authoritative or institutional sources)\n"
+        "H = Heuristic (pattern-based, rule-of-thumb, inferred)\n"
+        "S = Speculative (conjectural, hypothetical, beyond current evidence)\n\n"
+        "Output ONLY the single letter: A, D, E, R, H, or S."
+    )
+    mode = ollama_chat(
+        MODE_CLASSIFIER_MODEL,
+        system_msg,
+        claim,
+        keep_alive="0",
+        temperature=0.0,
+        max_tokens=128,
+        num_ctx=1024,
+        keep_alive="30m",
+    )
+    print("\n Knowledge Mode Classification...", mode)
+
+    # Clean up the output to handle any stray whitespace or formatting safely
+    mode_clean = mode.strip().upper()
+    if mode_clean and mode_clean[0] in ["A", "D", "E", "R", "H", "S"]:
+        return mode_clean[0]
+    return "R"
+
+def generate_improvement_recommendations(
+    enhanced: str,
+) -> str:
+
+    system_msg = (
+        "You are given an enhanced summary that contains claims with confidence scores\n"
+        "Your task:\n"
+        "- Identify claims with confidence below 0.90.\n"
+        "- Explain why the claim falls in this range.\n"
+        "- Suggest improvements that would increase this score, or if the claim should be completely disregarded.\n"
+        "IMPORTANT: Output your response as a clean, plain text string. Do not generate nested markdown headers like ###, make the header in bold instead."
+    )
+    user_msg = f"Enhanced Summary:\n{enhanced}"
+    recommendation = ollama_chat(
+        ADVISOR_MODEL,
+        system_msg,
+        user_msg,
+        temperature=0.2,
+        max_tokens=1024,
+        num_ctx=8192,
+        keep_alive="30m",
+    )
+    clean_recommendation = recommendation.strip()
+    print("recommendaitons", clean_recommendation)
+    return clean_recommendation
+
