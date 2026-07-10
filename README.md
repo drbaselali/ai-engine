@@ -29,19 +29,19 @@ The details of the project and its functions are provided in src. This project d
 * User prompt: Describe WWII
 * Sources:
   
-https://www.wikiwand.com/en/World_War_II
+1- https://www.wikiwand.com/en/World_War_II
 
-https://www.britannica.com/event/How-Did-World-War-II-Start
+2- https://www.britannica.com/event/How-Did-World-War-II-Start
 
-https://commons.wikimedia.org/wiki/Atlas_of_World_War_II
+3- https://commons.wikimedia.org/wiki/Atlas_of_World_War_II
 
-https://timepath.org/world-war-ii
+4- https://timepath.org/world-war-ii
 
-https://www.imdb.com/title/tt40385200/
+5- https://www.imdb.com/title/tt40385200/
 
-https://www.cbsnews.com/tag/world-war-ii/
+6- https://www.cbsnews.com/tag/world-war-ii/
 
-https://www.politico.com/news/world-war-ii
+7- https://www.politico.com/news/world-war-ii
 
 * Generated response using the extracted summaries from the sources:
 World War II was a global conflict that lasted from 1939 to 1945 and involved most of the world's nations. It began on September 1, 1939, when Germany invaded Poland, leading Great Britain and France to declare war two days later. The immediate causes were rooted in the harsh terms of the Treaty of Versailles after World War I, which left Germany economically crippled and politically humiliated, fostering resentment that allowed Adolf Hitler and the Nazi Party to rise to power.
